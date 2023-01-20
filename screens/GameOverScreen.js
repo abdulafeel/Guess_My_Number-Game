@@ -10,7 +10,7 @@ function GameOverScreen({ roundsNumber, userNumber, onStartNewGame }) {
       <View style={styles.imageContainer}>
         <Image
           style={styles.image}
-          source={require("../assets/images/success.png")}
+          source={require("../assets/images/gameover.png")}
         />
       </View>
       <Text style={styles.summaryText}>
@@ -35,11 +35,12 @@ const styles = StyleSheet.create({
   imageContainer: {
     width: 300,
     height: 300,
-    borderRadius: 150,
-    borderWidth: 3,
+    //borderRadius: 150,
+    //borderWidth: 3,
     borderColor: Colors.primary800,
     overflow: "hidden",
     margin: 36,
+    opacity: 0.8,
   },
   image: {
     width: "100%",

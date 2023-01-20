@@ -4,7 +4,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import { useState } from "react";
 import GameScreen from "./screens/GameScreen";
 import GameOverScreen from "./screens/GameOverScreen";
-import Colors from "./constants/colors";
+import Colors from "./constants/Colors.js";
 import { useFonts } from "expo-font";
 import AppLoading from "expo-app-loading";
 
@@ -54,12 +54,12 @@ export default function App() {
 
   return (
     <LinearGradient
-      colors={[Colors.primary700, Colors.accent500]}
+      colors={[Colors.main2, Colors.main]}
       style={styles.container}
     >
       <ImageBackground
-        source={require("./assets/images/dice.jpg")}
-        resizeMode="cover"
+        source={require("./assets/images/guessbg.jpg")}
+        resizeMode="repeat"
         style={styles.container}
         imageStyle={styles.backgroundImage}
       >

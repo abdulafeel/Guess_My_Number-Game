@@ -1,7 +1,7 @@
 import { TextInput, View, StyleSheet, Alert, Text } from "react-native";
 import PrimaryButton from "../components/ui/PrimaryButton";
 import { useState } from "react";
-import Colors from "../constants/colors";
+import Colors from "../constants/Colors.js";
 import Title from "../components/ui/Title";
 import Card from "../components/ui/Card";
 import InstructionText from "../components/ui/InstructionText";
@@ -71,6 +71,7 @@ const styles = StyleSheet.create({
     marginVertical: 8,
     fontWeight: "bold",
     textAlign: "center",
+    marginBottom: 30,
   },
   buttonsContainer: {
     flexDirection: "row",
